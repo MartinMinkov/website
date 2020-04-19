@@ -10,6 +10,7 @@ let make = (~children) => {
       />
       <title> {React.string("Martins Website")} </title>
     </Next.Head>
+    <Navbar />
     children
   </>;
 };

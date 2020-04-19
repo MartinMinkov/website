@@ -36,7 +36,9 @@ module Style = {
 [@react.component]
 let make = () =>
   <nav
-    className="navbar is-light" role="navigation" ariaLabel="main navigation">
+    className="navbar is-primary"
+    role="navigation"
+    ariaLabel="main navigation">
     <div className=Style.navbarBrand>
       <h1 className=Style.navbarTitle>
         {"Martin Minkov" |> ReasonReact.string}
@@ -47,10 +49,22 @@ let make = () =>
     </div>
     <div className=Style.navBarMenu>
       <div className="navbar-end">
-        <a className="navbar-item"> {"Home" |> ReasonReact.string} </a>
-        <a className="navbar-item"> {"Fun Facts" |> ReasonReact.string} </a>
-        <a className="navbar-item"> {"Github" |> ReasonReact.string} </a>
-        <a className="navbar-item"> {"Contact" |> ReasonReact.string} </a>
+        <a className="navbar-item">
+          <span className="icon"> <Icons.Home height="1.0rem" /> </span>
+          <span> {"Home" |> ReasonReact.string} </span>
+        </a>
+        <a className="navbar-item">
+          <span className="icon"> <Icons.Fact height="1.0rem" /> </span>
+          <span> {"Fun Facts" |> ReasonReact.string} </span>
+        </a>
+        <a className="navbar-item">
+          <span className="icon"> <Icons.Github height="1.0rem" /> </span>
+          <span> {"Github" |> ReasonReact.string} </span>
+        </a>
+        <a className="navbar-item">
+          <span className="icon"> <Icons.Contact height="1.0rem" /> </span>
+          <span> {"Contact" |> ReasonReact.string} </span>
+        </a>
       </div>
     </div>
   </nav>;

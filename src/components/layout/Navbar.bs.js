@@ -2,6 +2,7 @@
 
 import * as Css from "bs-css/src/Css.js";
 import * as React from "react";
+import * as Icons$MyBlog from "../../bindings/Icons.bs.js";
 import * as Style$MyBlog from "./Style.bs.js";
 
 var navbarBrand = Css.merge(/* :: */[
@@ -85,7 +86,7 @@ var Style = /* module */[
 function Navbar(Props) {
   return React.createElement("nav", {
               "aria-label": "main navigation",
-              className: "navbar is-light",
+              className: "navbar is-primary",
               role: "navigation"
             }, React.createElement("div", {
                   className: navbarBrand
@@ -99,13 +100,29 @@ function Navbar(Props) {
                       className: "navbar-end"
                     }, React.createElement("a", {
                           className: "navbar-item"
-                        }, "Home"), React.createElement("a", {
+                        }, React.createElement("span", {
+                              className: "icon"
+                            }, React.createElement(Icons$MyBlog.Home[/* make */0], {
+                                  height: "1.0rem"
+                                })), React.createElement("span", undefined, "Home")), React.createElement("a", {
                           className: "navbar-item"
-                        }, "Fun Facts"), React.createElement("a", {
+                        }, React.createElement("span", {
+                              className: "icon"
+                            }, React.createElement(Icons$MyBlog.Fact[/* make */0], {
+                                  height: "1.0rem"
+                                })), React.createElement("span", undefined, "Fun Facts")), React.createElement("a", {
                           className: "navbar-item"
-                        }, "Github"), React.createElement("a", {
+                        }, React.createElement("span", {
+                              className: "icon"
+                            }, React.createElement(Icons$MyBlog.Github[/* make */0], {
+                                  height: "1.0rem"
+                                })), React.createElement("span", undefined, "Github")), React.createElement("a", {
                           className: "navbar-item"
-                        }, "Contact"))));
+                        }, React.createElement("span", {
+                              className: "icon"
+                            }, React.createElement(Icons$MyBlog.Contact[/* make */0], {
+                                  height: "1.0rem"
+                                })), React.createElement("span", undefined, "Contact")))));
 }
 
 var make = Navbar;

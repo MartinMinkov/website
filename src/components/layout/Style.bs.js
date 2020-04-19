@@ -4,7 +4,7 @@ import * as Css from "bs-css/src/Css.js";
 
 var Colors_000 = /* darkGrey : `hex */[
   5194459,
-  "#455a64"
+  "455a64"
 ];
 
 var Colors_001 = /* mediumGrey : `hex */[
@@ -14,13 +14,19 @@ var Colors_001 = /* mediumGrey : `hex */[
 
 var Colors_002 = /* lightGrey : `hex */[
   5194459,
-  "#cfd8dc"
+  "cfd8dc"
+];
+
+var Colors_003 = /* white : `hex */[
+  5194459,
+  "ffffff"
 ];
 
 var Colors = /* module */[
   Colors_000,
   Colors_001,
-  Colors_002
+  Colors_002,
+  Colors_003
 ];
 
 var Sizes_000 = /* large : `rem */[

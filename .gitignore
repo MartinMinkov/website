@@ -1,0 +1,11 @@
+out/
+node_modules/
+lib/
+.next/
+.merlin
+*.gen.js
+public/static/blog-rss.xml
+src/gen/
+*.aux
+*.log
+*.pdf

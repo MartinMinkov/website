@@ -116,6 +116,10 @@ var Style = /* module */[
   /* navBarItem */navBarItem
 ];
 
+function s(s$1) {
+  return s$1;
+}
+
 function Navbar(Props) {
   return React.createElement("nav", {
               "aria-label": "main navigation",
@@ -168,6 +172,7 @@ var $$default = Navbar;
 
 export {
   Style ,
+  s ,
   make ,
   $$default ,
   $$default as default,

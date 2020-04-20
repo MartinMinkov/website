@@ -1,5 +1,3 @@
-let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis, risus vel mollis interdum, nulla augue aliquet quam";
-
 module Style = {
   open Css;
   let contactContainer = style([marginLeft(`rem(5.0))]);
@@ -10,7 +8,7 @@ let make = () =>
   <div>
     <Section
       title="How to contact me"
-      subtitle=text
+      subtitle="Feel free to reach me, I am active on all the platforms listed."
       icon={<Icons.Wave height="2rem" />}
     />
     <div className=Style.contactContainer>

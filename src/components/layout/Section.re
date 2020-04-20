@@ -14,6 +14,13 @@ module Style = {
       "container",
     ]);
 
+  let sectionText =
+    style([
+      display(`flex),
+      flexDirection(`column),
+      justifyContent(`spaceEvenly),
+    ]);
+
   let sectionTitle = merge([style([fontSize(Style.Sizes.large)]), "title"]);
 
   let sectionIcon = merge([style([justifySelf(`center)]), "icon"]);
@@ -30,7 +37,7 @@ let make =
   <section className="section is-fluid">
     <div className=Style.sectionContainer>
       <span className=Style.sectionIcon> icon </span>
-      <div>
+      <div className=Style.sectionText>
         <h1 className=Style.sectionTitle> {title |> ReasonReact.string} </h1>
         <h2 className="subtitle"> {subtitle |> ReasonReact.string} </h2>
         children

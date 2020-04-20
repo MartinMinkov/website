@@ -57,6 +57,17 @@ var sectionContainer = Css.merge(/* :: */[
       ]
     ]);
 
+var sectionText = Css.style(/* :: */[
+      Css.display(/* flex */-1010954439),
+      /* :: */[
+        Css.flexDirection(/* column */-963948842),
+        /* :: */[
+          Css.justifyContent(/* spaceEvenly */-1016061555),
+          /* [] */0
+        ]
+      ]
+    ]);
+
 var sectionTitle = Css.merge(/* :: */[
       Css.style(/* :: */[
             Css.fontSize(Style$MyBlog.Sizes[/* large */0]),
@@ -81,6 +92,7 @@ var sectionIcon = Css.merge(/* :: */[
 
 var Style = /* module */[
   /* sectionContainer */sectionContainer,
+  /* sectionText */sectionText,
   /* sectionTitle */sectionTitle,
   /* sectionIcon */sectionIcon
 ];
@@ -96,7 +108,9 @@ function Section(Props) {
                   className: sectionContainer
                 }, React.createElement("span", {
                       className: sectionIcon
-                    }, icon), React.createElement("div", undefined, React.createElement("h1", {
+                    }, icon), React.createElement("div", {
+                      className: sectionText
+                    }, React.createElement("h1", {
                           className: sectionTitle
                         }, title), React.createElement("h2", {
                           className: "subtitle"

@@ -46,6 +46,8 @@ module Style = {
     ]);
 };
 
+let s = s => ReasonReact.string(s);
+
 [@react.component]
 let make = () =>
   <nav
@@ -53,30 +55,28 @@ let make = () =>
     role="navigation"
     ariaLabel="main navigation">
     <div className=Style.navBarBrand>
-      <h1 className=Style.navBarTitle>
-        {"Martin Minkov" |> ReasonReact.string}
-      </h1>
+      <h1 className=Style.navBarTitle> {s("Martin Minkov")} </h1>
       <h2 className=Style.navBarSubtitle>
-        {"Software Developer from Vancouver, Canada" |> ReasonReact.string}
+        {s("Software Developer from Vancouver, Canada")}
       </h2>
     </div>
     <div className=Style.navBarMenu>
       <div className="navbar-end">
         <a className=Style.navBarItem href="/">
           <span className="icon"> <Icons.Home height="1.0rem" /> </span>
-          <span> {"Home" |> ReasonReact.string} </span>
+          <span> {s("Home")} </span>
         </a>
         <a className=Style.navBarItem href="/funfacts">
           <span className="icon"> <Icons.Fact height="1.0rem" /> </span>
-          <span> {"Fun Facts" |> ReasonReact.string} </span>
+          <span> {s("Fun Facts")} </span>
         </a>
         <a className=Style.navBarItem href="https://github.com/martinminkov/">
           <span className="icon"> <Icons.Github height="1.0rem" /> </span>
-          <span> {"Github" |> ReasonReact.string} </span>
+          <span> {s("Github")} </span>
         </a>
         <a className=Style.navBarItem href="/contact">
           <span className="icon"> <Icons.Contact height="1.0rem" /> </span>
-          <span> {"Contact" |> ReasonReact.string} </span>
+          <span> {s("Contact")} </span>
         </a>
       </div>
     </div>

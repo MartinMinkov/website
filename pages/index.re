@@ -8,7 +8,7 @@ module Style = {
     ]);
 };
 
-let firstText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet turpis quam, id commodo odio accumsan eget. Vivamus ipsum magna, mattis quis ullamcorper nec, vulputate sed neque. Nullam mollis lacinia ex, vel cursus tortor feugiat vitae.";
+let s = s => ReasonReact.string(s);
 
 [@react.component]
 let make = () =>
@@ -17,14 +17,30 @@ let make = () =>
     <div className=Style.indexContainer>
       <Section
         title="Hey, I'm Martin - A software developer from Canada"
-        subtitle=firstText
-        icon={<Icons.Wave height="2rem" />}
-      />
+        icon={<Icons.Wave height="2rem" />}>
+        <p>
+          {s("I'm a 4th year computer science student at ")}
+          <a href="https://www.sfu.ca/"> {s("Simon Fraser University ")} </a>
+          {s("I've also previously graduated from ")}
+          <a href="https://www.bcit.ca/"> {s("BCIT")} </a>
+          {s(
+             " with a 2 year diploma. I enjoy working with new technologies and being exposed to all kinds of ideas.
+             Feel free to get in touch with me!",
+           )}
+        </p>
+      </Section>
       <Section
-        title="Development Experience"
-        subtitle=firstText
-        icon={<Icons.Github height="2rem" />}
-      />
+        title="Development Experience" icon={<Icons.Github height="2rem" />}>
+        <p>
+          {s(
+             "I have experience working with various languages and frameworks.
+             At BCIT, I was exposed to a lot of C++ and networking principles.
+             At SFU, I have taken a more general approach and have taken courses in compiler design and implementation, embedded development,
+             computational complexity, and parallel programming. In my free time, I like to work on web development projects
+             and genuinely enjoy working with React.",
+           )}
+        </p>
+      </Section>
     </div>
   </div>;
 

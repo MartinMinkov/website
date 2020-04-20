@@ -5,8 +5,6 @@ import * as React from "react";
 import * as Icons$MyBlog from "../src/bindings/Icons.bs.js";
 import * as Section$MyBlog from "../src/components/layout/Section.bs.js";
 
-var text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis, risus vel mollis interdum, nulla augue aliquet quam";
-
 var funfactsContainer = Css.style(/* :: */[
       Css.display(/* grid */-999565626),
       /* :: */[
@@ -34,14 +32,14 @@ var funfactsContainer = Css.style(/* :: */[
     ]);
 
 var funFactImage = Css.style(/* :: */[
-      Css.width(/* `percent */[
-            -119887163,
-            80.0
+      Css.width(/* `rem */[
+            5691738,
+            30.0
           ]),
       /* :: */[
-        Css.height(/* `percent */[
-              -119887163,
-              80.0
+        Css.height(/* `rem */[
+              5691738,
+              20.0
             ]),
         /* [] */0
       ]
@@ -52,76 +50,56 @@ var Style = /* module */[
   /* funFactImage */funFactImage
 ];
 
+function s(s$1) {
+  return s$1;
+}
+
 function Funfacts(Props) {
   return React.createElement("div", undefined, React.createElement("div", undefined, React.createElement(Section$MyBlog.make, {
-                      title: "Some fun facts about my hobbies!",
+                      title: "Some fun facts about my hobbies",
                       icon: React.createElement(Icons$MyBlog.Wave[/* make */0], {
                             height: "2rem"
                           }),
-                      children: React.createElement("p", undefined, text)
+                      children: React.createElement("p", undefined, "While you're here on this website, might as well learn a few fun facts that I find interesting!")
                     })), React.createElement("div", {
                   className: funfactsContainer
                 }, React.createElement(Section$MyBlog.make, {
                       title: "Olympic Weightlifting",
-                      subtitle: text,
                       icon: React.createElement(Icons$MyBlog.Wave[/* make */0], {
                             height: "2rem"
                           }),
-                      children: React.createElement("img", {
-                            className: funFactImage,
-                            src: "static/images/img1.png"
-                          })
-                    }), React.createElement(Section$MyBlog.make, {
+                      children: null
+                    }, React.createElement("p", undefined, "Olympic Weightlifting  made its first appearence in the 1896 Olympics and then again in 1904;\n        however, it wasn't until 1920 that it was permanently established as an Olympic Sport."), React.createElement("img", {
+                          className: funFactImage,
+                          src: "static/gifs/oly.gif"
+                        })), React.createElement(Section$MyBlog.make, {
                       title: "Programming",
-                      subtitle: text,
                       icon: React.createElement(Icons$MyBlog.Github[/* make */0], {
                             height: "2rem"
                           }),
-                      children: React.createElement("img", {
-                            className: funFactImage,
-                            src: "static/images/img1.png"
-                          })
-                    }), React.createElement(Section$MyBlog.make, {
+                      children: null
+                    }, React.createElement("p", undefined, "Grace Murray Hopper was one of the first computer programmers to work on the Harvard Mark I.\n             She was also a United States Navy rear admiral, helped develop COBOL -- one of the first high-level\n             programming languages -- and invented the first compiler, a program that translates programming code\n             to machine language."), React.createElement("img", {
+                          className: funFactImage,
+                          src: "static/images/gracehopper.jpg"
+                        })), React.createElement(Section$MyBlog.make, {
                       title: "Web Development",
-                      subtitle: text,
                       icon: React.createElement(Icons$MyBlog.Github[/* make */0], {
                             height: "2rem"
                           }),
-                      children: React.createElement("img", {
-                            className: funFactImage,
-                            src: "static/images/img1.png"
-                          })
-                    }), React.createElement(Section$MyBlog.make, {
+                      children: null
+                    }, React.createElement("p", undefined, "This website was built with Reason and Next.js, which has been really fun to work with. Reason lets you write\n        simple, fast and quality type safe code while leveraging both the JavaScript & OCaml ecosystems."), React.createElement("img", {
+                          className: funFactImage,
+                          src: "static/images/reason.png"
+                        })), React.createElement(Section$MyBlog.make, {
                       title: "BJJ",
-                      subtitle: text,
                       icon: React.createElement(Icons$MyBlog.Github[/* make */0], {
                             height: "2rem"
                           }),
-                      children: React.createElement("img", {
-                            className: funFactImage,
-                            src: "static/images/img1.png"
-                          })
-                    }), React.createElement(Section$MyBlog.make, {
-                      title: "Video Games",
-                      subtitle: text,
-                      icon: React.createElement(Icons$MyBlog.Github[/* make */0], {
-                            height: "2rem"
-                          }),
-                      children: React.createElement("img", {
-                            className: funFactImage,
-                            src: "static/images/img1.png"
-                          })
-                    }), React.createElement(Section$MyBlog.make, {
-                      title: "Geocaching",
-                      subtitle: text,
-                      icon: React.createElement(Icons$MyBlog.Github[/* make */0], {
-                            height: "2rem"
-                          }),
-                      children: React.createElement("img", {
-                            className: funFactImage,
-                            src: "static/images/img1.png"
-                          })
-                    })));
+                      children: null
+                    }, React.createElement("p", undefined, "BJJ is a relatively new martial art, originating from Rio de Jeneiro in the 1920s. Nowadays, it takes an average\n        of 8-12 years to get a black belt in the sport and is practiced by many around the world. There is never an age\n        that is too old to start!"), React.createElement("img", {
+                          className: funFactImage,
+                          src: "static/images/bjj.jpg"
+                        }))));
 }
 
 var make = Funfacts;
@@ -129,8 +107,8 @@ var make = Funfacts;
 var $$default = Funfacts;
 
 export {
-  text ,
   Style ,
+  s ,
   make ,
   $$default ,
   $$default as default,

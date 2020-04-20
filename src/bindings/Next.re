@@ -3,12 +3,6 @@ module Head = {
   external make: (~children: React.element) => React.element = "default";
 };
 
-module Error = {
-  [@bs.module "next/head"] [@react.component]
-  external make: (~statusCode: int, ~children: React.element) => React.element =
-    "default";
-};
-
 module Link = {
   [@bs.module "next/link"] [@react.component]
   external make:

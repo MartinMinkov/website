@@ -6,8 +6,6 @@ import * as Icons$MyBlog from "../src/bindings/Icons.bs.js";
 import * as Section$MyBlog from "../src/components/layout/Section.bs.js";
 import * as IconSection$MyBlog from "../src/components/layout/IconSection.bs.js";
 
-var text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis, risus vel mollis interdum, nulla augue aliquet quam";
-
 var contactContainer = Css.style(/* :: */[
       Css.marginLeft(/* `rem */[
             5691738,
@@ -21,7 +19,7 @@ var Style = /* module */[/* contactContainer */contactContainer];
 function Contact(Props) {
   return React.createElement("div", undefined, React.createElement(Section$MyBlog.make, {
                   title: "How to contact me",
-                  subtitle: text,
+                  subtitle: "Feel free to reach me, I am active on all the platforms listed.",
                   icon: React.createElement(Icons$MyBlog.Wave[/* make */0], {
                         height: "2rem"
                       })
@@ -59,7 +57,6 @@ var make = Contact;
 var $$default = Contact;
 
 export {
-  text ,
   Style ,
   make ,
   $$default ,

@@ -20,7 +20,7 @@ module Control = {
       "html",
       [
         boxSizing(`borderBox),
-        fontSize(pct(62.5)) // set default brosser size to 10px.
+        fontSize(`percent(62.5)) // set default brosser size to 10px.
       ],
     );
 };

@@ -2,16 +2,17 @@ let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sa
 
 module Style = {
   open Css;
-  let contactContainer =
-    style([marginLeft(`rem(5.0)), marginTop(`rem(-5.0))]);
+  let contactContainer = style([marginLeft(`rem(5.0))]);
 };
 
 [@react.component]
 let make = () =>
   <div>
-    <Section title="How to contact me" icon={<Icons.Wave height="2rem" />}>
-      <p> {text |> React.string} </p>
-    </Section>
+    <Section
+      title="How to contact me"
+      subtitle=text
+      icon={<Icons.Wave height="2rem" />}
+    />
     <div className=Style.contactContainer>
       <IconSection
         title="minkovlmartin@gmail.com"

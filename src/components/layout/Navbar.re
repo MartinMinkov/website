@@ -66,7 +66,7 @@ let make = () =>
           <span className="icon"> <Icons.Home height="1.0rem" /> </span>
           <span> {"Home" |> ReasonReact.string} </span>
         </a>
-        <a className=Style.navBarItem>
+        <a className=Style.navBarItem href="/funfacts">
           <span className="icon"> <Icons.Fact height="1.0rem" /> </span>
           <span> {"Fun Facts" |> ReasonReact.string} </span>
         </a>

@@ -36,22 +36,7 @@ var sectionContainer = Css.merge(/* :: */[
                           ]
                         ]
                       ],
-                      /* :: */[
-                        /* `minmax */[
-                          -754859950,
-                          /* tuple */[
-                            /* `rem */[
-                              5691738,
-                              1.0
-                            ],
-                            /* `fr */[
-                              22860,
-                              1.0
-                            ]
-                          ]
-                        ],
-                        /* [] */0
-                      ]
+                      /* [] */0
                     ]),
                 /* :: */[
                   Css.gridColumnGap(Css.rem(1.0)),
@@ -111,11 +96,11 @@ function Section(Props) {
                   className: sectionContainer
                 }, React.createElement("span", {
                       className: sectionIcon
-                    }, icon), React.createElement("h1", {
-                      className: sectionTitle
-                    }, title), React.createElement("h2", {
-                      className: "subtitle"
-                    }, subtitle), children));
+                    }, icon), React.createElement("div", undefined, React.createElement("h1", {
+                          className: sectionTitle
+                        }, title), React.createElement("h2", {
+                          className: "subtitle"
+                        }, subtitle), children)));
 }
 
 var make = Section;

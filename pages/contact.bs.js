@@ -13,13 +13,7 @@ var contactContainer = Css.style(/* :: */[
             5691738,
             5.0
           ]),
-      /* :: */[
-        Css.marginTop(/* `rem */[
-              5691738,
-              -5.0
-            ]),
-        /* [] */0
-      ]
+      /* [] */0
     ]);
 
 var Style = /* module */[/* contactContainer */contactContainer];
@@ -27,10 +21,10 @@ var Style = /* module */[/* contactContainer */contactContainer];
 function Contact(Props) {
   return React.createElement("div", undefined, React.createElement(Section$MyBlog.make, {
                   title: "How to contact me",
+                  subtitle: text,
                   icon: React.createElement(Icons$MyBlog.Wave[/* make */0], {
                         height: "2rem"
-                      }),
-                  children: React.createElement("p", undefined, text)
+                      })
                 }), React.createElement("div", {
                   className: contactContainer
                 }, React.createElement(IconSection$MyBlog.make, {

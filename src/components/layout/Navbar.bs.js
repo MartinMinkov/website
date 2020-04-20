@@ -139,7 +139,8 @@ function Navbar(Props) {
                             }, React.createElement(Icons$MyBlog.Home[/* make */0], {
                                   height: "1.0rem"
                                 })), React.createElement("span", undefined, "Home")), React.createElement("a", {
-                          className: navBarItem
+                          className: navBarItem,
+                          href: "/funfacts"
                         }, React.createElement("span", {
                               className: "icon"
                             }, React.createElement(Icons$MyBlog.Fact[/* make */0], {

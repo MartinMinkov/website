@@ -74,7 +74,10 @@ function defaults(param) {
           /* :: */[
             Css.boxSizing(/* borderBox */9307263),
             /* :: */[
-              Css.fontSize(Css.pct(62.5)),
+              Css.fontSize(/* `percent */[
+                    -119887163,
+                    62.5
+                  ]),
               /* [] */0
             ]
           ]

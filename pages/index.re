@@ -1,6 +1,6 @@
 module Style = {
   open Css;
-  let sectionContainer =
+  let indexContainer =
     style([
       display(`flex),
       justifyContent(`spaceBetween),
@@ -14,16 +14,17 @@ let firstText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam al
 let make = () =>
   <div>
     <Gallery />
-    <div className=Style.sectionContainer>
+    <div className=Style.indexContainer>
       <Section
         title="Hey, I'm Martin - A software developer from Canada"
-        icon={<Icons.Wave height="2rem" />}>
-        <p> {firstText |> React.string} </p>
-      </Section>
+        subtitle=firstText
+        icon={<Icons.Wave height="2rem" />}
+      />
       <Section
-        title="Development Experience" icon={<Icons.Github height="2rem" />}>
-        <p> {firstText |> React.string} </p>
-      </Section>
+        title="Development Experience"
+        subtitle=firstText
+        icon={<Icons.Github height="2rem" />}
+      />
     </div>
   </div>;
 

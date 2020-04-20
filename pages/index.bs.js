@@ -6,7 +6,7 @@ import * as Icons$MyBlog from "../src/bindings/Icons.bs.js";
 import * as Gallery$MyBlog from "../src/components/layout/Gallery.bs.js";
 import * as Section$MyBlog from "../src/components/layout/Section.bs.js";
 
-var sectionContainer = Css.style(/* :: */[
+var indexContainer = Css.style(/* :: */[
       Css.display(/* flex */-1010954439),
       /* :: */[
         Css.justifyContent(/* spaceBetween */516682146),
@@ -17,25 +17,25 @@ var sectionContainer = Css.style(/* :: */[
       ]
     ]);
 
-var Style = /* module */[/* sectionContainer */sectionContainer];
+var Style = /* module */[/* indexContainer */indexContainer];
 
 var firstText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet turpis quam, id commodo odio accumsan eget. Vivamus ipsum magna, mattis quis ullamcorper nec, vulputate sed neque. Nullam mollis lacinia ex, vel cursus tortor feugiat vitae.";
 
 function Index(Props) {
   return React.createElement("div", undefined, React.createElement(Gallery$MyBlog.make, { }), React.createElement("div", {
-                  className: sectionContainer
+                  className: indexContainer
                 }, React.createElement(Section$MyBlog.make, {
                       title: "Hey, I'm Martin - A software developer from Canada",
+                      subtitle: firstText,
                       icon: React.createElement(Icons$MyBlog.Wave[/* make */0], {
                             height: "2rem"
-                          }),
-                      children: React.createElement("p", undefined, firstText)
+                          })
                     }), React.createElement(Section$MyBlog.make, {
                       title: "Development Experience",
+                      subtitle: firstText,
                       icon: React.createElement(Icons$MyBlog.Github[/* make */0], {
                             height: "2rem"
-                          }),
-                      children: React.createElement("p", undefined, firstText)
+                          })
                     })));
 }
 
@@ -51,4 +51,4 @@ export {
   $$default as default,
   
 }
-/* sectionContainer Not a pure module */
+/* indexContainer Not a pure module */

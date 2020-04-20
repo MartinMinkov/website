@@ -1,5 +1,5 @@
 {
-  "name": "my-blog",
+  "name": "website",
   "reason": { "react-jsx": 3 },
   "bsc-flags": ["-bs-super-errors"],
   "sources": [

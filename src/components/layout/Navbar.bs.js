@@ -15,7 +15,10 @@ var navBarBrand = Css.merge(/* :: */[
                 /* :: */[
                   Css.alignContent(/* start */67859554),
                   /* :: */[
-                    Css.paddingLeft(Css.rem(2.0)),
+                    Css.paddingLeft(/* `rem */[
+                          5691738,
+                          2.0
+                        ]),
                     /* [] */0
                   ]
                 ]
@@ -126,7 +129,8 @@ function Navbar(Props) {
                 }, React.createElement("div", {
                       className: "navbar-end"
                     }, React.createElement("a", {
-                          className: navBarItem
+                          className: navBarItem,
+                          href: "/"
                         }, React.createElement("span", {
                               className: "icon"
                             }, React.createElement(Icons$MyBlog.Home[/* make */0], {
@@ -138,7 +142,8 @@ function Navbar(Props) {
                             }, React.createElement(Icons$MyBlog.Fact[/* make */0], {
                                   height: "1.0rem"
                                 })), React.createElement("span", undefined, "Fun Facts")), React.createElement("a", {
-                          className: navBarItem
+                          className: navBarItem,
+                          href: "https://github.com/martinminkov/"
                         }, React.createElement("span", {
                               className: "icon"
                             }, React.createElement(Icons$MyBlog.Github[/* make */0], {

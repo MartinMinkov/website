@@ -42,3 +42,8 @@ module Mail = {
   [@bs.module "../../public/static/icons/mail.svg"] [@react.component]
   external make: (~height: string) => React.element = "default";
 };
+
+module Wave = {
+  [@bs.module "../../public/static/icons/wave.svg"] [@react.component]
+  external make: (~height: string) => React.element = "default";
+};

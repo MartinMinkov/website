@@ -10,7 +10,7 @@ module Style = {
         flexDirection(`column),
         justifyContent(`start),
         alignContent(`start),
-        paddingLeft(rem(2.0)),
+        paddingLeft(`rem(2.0)),
       ]),
       "navbar-brand",
     ]);
@@ -59,7 +59,7 @@ let make = () =>
     </div>
     <div className=Style.navBarMenu>
       <div className="navbar-end">
-        <a className=Style.navBarItem>
+        <a className=Style.navBarItem href="/">
           <span className="icon"> <Icons.Home height="1.0rem" /> </span>
           <span> {"Home" |> ReasonReact.string} </span>
         </a>
@@ -67,7 +67,7 @@ let make = () =>
           <span className="icon"> <Icons.Fact height="1.0rem" /> </span>
           <span> {"Fun Facts" |> ReasonReact.string} </span>
         </a>
-        <a className=Style.navBarItem>
+        <a className=Style.navBarItem href="https://github.com/martinminkov/">
           <span className="icon"> <Icons.Github height="1.0rem" /> </span>
           <span> {"Github" |> ReasonReact.string} </span>
         </a>

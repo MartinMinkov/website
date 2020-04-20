@@ -4,6 +4,7 @@ import * as CvSvg from "../../public/static/icons/cv.svg";
 import * as FactSvg from "../../public/static/icons/fact.svg";
 import * as HomeSvg from "../../public/static/icons/home.svg";
 import * as MailSvg from "../../public/static/icons/mail.svg";
+import * as WaveSvg from "../../public/static/icons/wave.svg";
 import * as GithubSvg from "../../public/static/icons/github.svg";
 import * as ContactSvg from "../../public/static/icons/contact.svg";
 import * as TwitterSvg from "../../public/static/icons/twitter.svg";
@@ -46,6 +47,10 @@ var make$7 = MailSvg.default;
 
 var Mail = /* module */[/* make */make$7];
 
+var make$8 = WaveSvg.default;
+
+var Wave = /* module */[/* make */make$8];
+
 export {
   Style ,
   Github ,
@@ -56,6 +61,7 @@ export {
   LinkedIn ,
   Twitter ,
   Mail ,
+  Wave ,
   
 }
 /* make Not a pure module */

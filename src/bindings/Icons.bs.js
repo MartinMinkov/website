@@ -9,6 +9,11 @@ import * as ContactSvg from "../../public/static/icons/contact.svg";
 import * as TwitterSvg from "../../public/static/icons/twitter.svg";
 import * as LinkedinSvg from "../../public/static/icons/linkedin.svg";
 
+var Style = /* module */[
+  /* height */"1.0rem",
+  /* width */"1.0rem"
+];
+
 var make = GithubSvg.default;
 
 var Github = /* module */[/* make */make];
@@ -42,6 +47,7 @@ var make$7 = MailSvg.default;
 var Mail = /* module */[/* make */make$7];
 
 export {
+  Style ,
   Github ,
   Contact ,
   Home ,

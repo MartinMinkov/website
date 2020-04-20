@@ -1,4 +1,4 @@
 [@react.component]
-let make = () => <div> {ReasonReact.string("Index")} </div>;
+let make = () => <div> <Gallery /> </div>;
 
 let default = make;

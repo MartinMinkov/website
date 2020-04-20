@@ -1,3 +1,8 @@
+module Style = {
+  let height = "1.0rem";
+  let width = "1.0rem";
+};
+
 module Github = {
   [@bs.module "../../public/static/icons/github.svg"] [@react.component]
   external make: (~height: string) => React.element = "default";

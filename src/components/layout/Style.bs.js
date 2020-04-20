@@ -2,31 +2,49 @@
 
 import * as Css from "bs-css/src/Css.js";
 
-var Colors_000 = /* darkGrey : `hex */[
+var Colors_000 = /* lightBlue : `hex */[
+  5194459,
+  "bf4aa8"
+];
+
+var Colors_001 = /* darkBlue : `hex */[
+  5194459,
+  "12343b"
+];
+
+var Colors_002 = /* darkGrey : `hex */[
   5194459,
   "455a64"
 ];
 
-var Colors_001 = /* mediumGrey : `hex */[
+var Colors_003 = /* mediumGrey : `hex */[
   5194459,
   "607d8b"
 ];
 
-var Colors_002 = /* lightGrey : `hex */[
+var Colors_004 = /* lightGrey : `hex */[
   5194459,
   "cfd8dc"
 ];
 
-var Colors_003 = /* white : `hex */[
+var Colors_005 = /* white : `hex */[
   5194459,
   "ffffff"
+];
+
+var Colors_006 = /* black : `hex */[
+  5194459,
+  "000000"
 ];
 
 var Colors = /* module */[
   Colors_000,
   Colors_001,
   Colors_002,
-  Colors_003
+  Colors_003,
+  Colors_004,
+  Colors_005,
+  Colors_006
 ];
 
 var Sizes_000 = /* large : `rem */[

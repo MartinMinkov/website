@@ -1,8 +1,11 @@
 module Colors = {
+  let lightBlue = `hex("bf4aa8");
+  let darkBlue = `hex("12343b");
   let darkGrey = `hex("455a64");
   let mediumGrey = `hex("607d8b");
   let lightGrey = `hex("cfd8dc");
   let white = `hex("ffffff");
+  let black = `hex("000000");
 };
 
 module Sizes = {

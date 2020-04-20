@@ -5,7 +5,7 @@ import * as React from "react";
 import * as Icons$MyBlog from "../../bindings/Icons.bs.js";
 import * as Style$MyBlog from "./Style.bs.js";
 
-var navbarBrand = Css.merge(/* :: */[
+var navBarBrand = Css.merge(/* :: */[
       Css.style(/* :: */[
             Css.display(/* flex */-1010954439),
             /* :: */[
@@ -28,7 +28,7 @@ var navbarBrand = Css.merge(/* :: */[
       ]
     ]);
 
-var navbarTitle = Css.merge(/* :: */[
+var navBarTitle = Css.merge(/* :: */[
       Css.style(/* :: */[
             Css.fontSize(Style$MyBlog.Sizes[/* large */0]),
             /* [] */0
@@ -48,7 +48,7 @@ var navbarTitle = Css.merge(/* :: */[
       ]
     ]);
 
-var navbarSubtitle = Css.merge(/* :: */[
+var navBarSubtitle = Css.merge(/* :: */[
       Css.style(/* :: */[
             Css.fontSize(Style$MyBlog.Sizes[/* small */2]),
             /* [] */0
@@ -76,48 +76,75 @@ var navBarMenu = Css.merge(/* :: */[
       ]
     ]);
 
+var navBarItem = Css.merge(/* :: */[
+      Css.style(/* :: */[
+            Css.fontSize(Style$MyBlog.Sizes[/* small */2]),
+            /* :: */[
+              Css.paddingRight(Css.rem(2.0)),
+              /* :: */[
+                Css.display(/* flex */-1010954439),
+                /* :: */[
+                  Css.justifyContent(/* center */98248149),
+                  /* :: */[
+                    Css.alignItems(/* center */98248149),
+                    /* :: */[
+                      Css.color(Style$MyBlog.Colors[/* black */6]),
+                      /* [] */0
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]),
+      /* :: */[
+        "navbar-menu",
+        /* [] */0
+      ]
+    ]);
+
 var Style = /* module */[
-  /* navbarBrand */navbarBrand,
-  /* navbarTitle */navbarTitle,
-  /* navbarSubtitle */navbarSubtitle,
-  /* navBarMenu */navBarMenu
+  /* navBarBrand */navBarBrand,
+  /* navBarTitle */navBarTitle,
+  /* navBarSubtitle */navBarSubtitle,
+  /* navBarMenu */navBarMenu,
+  /* navBarItem */navBarItem
 ];
 
 function Navbar(Props) {
   return React.createElement("nav", {
               "aria-label": "main navigation",
-              className: "navbar is-primary",
+              className: "navbar is-light",
               role: "navigation"
             }, React.createElement("div", {
-                  className: navbarBrand
+                  className: navBarBrand
                 }, React.createElement("h1", {
-                      className: navbarTitle
+                      className: navBarTitle
                     }, "Martin Minkov"), React.createElement("h2", {
-                      className: navbarSubtitle
+                      className: navBarSubtitle
                     }, "Software Developer from Vancouver, Canada")), React.createElement("div", {
                   className: navBarMenu
                 }, React.createElement("div", {
                       className: "navbar-end"
                     }, React.createElement("a", {
-                          className: "navbar-item"
+                          className: navBarItem
                         }, React.createElement("span", {
                               className: "icon"
                             }, React.createElement(Icons$MyBlog.Home[/* make */0], {
                                   height: "1.0rem"
                                 })), React.createElement("span", undefined, "Home")), React.createElement("a", {
-                          className: "navbar-item"
+                          className: navBarItem
                         }, React.createElement("span", {
                               className: "icon"
                             }, React.createElement(Icons$MyBlog.Fact[/* make */0], {
                                   height: "1.0rem"
                                 })), React.createElement("span", undefined, "Fun Facts")), React.createElement("a", {
-                          className: "navbar-item"
+                          className: navBarItem
                         }, React.createElement("span", {
                               className: "icon"
                             }, React.createElement(Icons$MyBlog.Github[/* make */0], {
                                   height: "1.0rem"
                                 })), React.createElement("span", undefined, "Github")), React.createElement("a", {
-                          className: "navbar-item"
+                          className: navBarItem
                         }, React.createElement("span", {
                               className: "icon"
                             }, React.createElement(Icons$MyBlog.Contact[/* make */0], {
@@ -136,4 +163,4 @@ export {
   $$default as default,
   
 }
-/* navbarBrand Not a pure module */
+/* navBarBrand Not a pure module */

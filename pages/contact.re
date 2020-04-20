@@ -15,11 +15,12 @@ let make = () =>
     <div className=Style.contactContainer>
       <IconSection
         title="minkovlmartin@gmail.com"
+        href="mailto:minkovlmartin@gmail.com"
         icon={<Icons.Mail height="2rem" />}
       />
       <IconSection
-        title="linkedin.com/in/martinlminkov/"
-        href="https://www.twitter.com/Greenliketrees"
+        title="linkedin.com/in/martinlminkov"
+        href="https://www.linkedin.com/in/martinlminkov"
         icon={<Icons.LinkedIn height="2rem" />}
       />
       <IconSection

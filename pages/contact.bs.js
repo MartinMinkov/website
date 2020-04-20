@@ -37,13 +37,14 @@ function Contact(Props) {
                       title: "minkovlmartin@gmail.com",
                       icon: React.createElement(Icons$MyBlog.Mail[/* make */0], {
                             height: "2rem"
-                          })
+                          }),
+                      href: "mailto:minkovlmartin@gmail.com"
                     }), React.createElement(IconSection$MyBlog.make, {
-                      title: "linkedin.com/in/martinlminkov/",
+                      title: "linkedin.com/in/martinlminkov",
                       icon: React.createElement(Icons$MyBlog.LinkedIn[/* make */0], {
                             height: "2rem"
                           }),
-                      href: "https://www.twitter.com/Greenliketrees"
+                      href: "https://www.linkedin.com/in/martinlminkov"
                     }), React.createElement(IconSection$MyBlog.make, {
                       title: "twitter.com/Greenliketrees",
                       icon: React.createElement(Icons$MyBlog.Twitter[/* make */0], {

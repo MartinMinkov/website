@@ -83,16 +83,19 @@ var navBarItem = Css.merge(/* :: */[
       Css.style(/* :: */[
             Css.fontSize(Style$MyBlog.Sizes[/* small */2]),
             /* :: */[
-              Css.paddingRight(Css.rem(2.0)),
+              Css.fontWeight(/* bold */-1055161979),
               /* :: */[
-                Css.display(/* flex */-1010954439),
+                Css.paddingRight(Css.rem(2.0)),
                 /* :: */[
-                  Css.justifyContent(/* center */98248149),
+                  Css.display(/* flex */-1010954439),
                   /* :: */[
-                    Css.alignItems(/* center */98248149),
+                    Css.justifyContent(/* center */98248149),
                     /* :: */[
-                      Css.color(Style$MyBlog.Colors[/* black */6]),
-                      /* [] */0
+                      Css.alignItems(/* center */98248149),
+                      /* :: */[
+                        Css.color(Style$MyBlog.Colors[/* white */5]),
+                        /* [] */0
+                      ]
                     ]
                   ]
                 ]
@@ -116,7 +119,7 @@ var Style = /* module */[
 function Navbar(Props) {
   return React.createElement("nav", {
               "aria-label": "main navigation",
-              className: "navbar is-light",
+              className: "navbar is-primary",
               role: "navigation"
             }, React.createElement("div", {
                   className: navBarBrand
@@ -149,7 +152,8 @@ function Navbar(Props) {
                             }, React.createElement(Icons$MyBlog.Github[/* make */0], {
                                   height: "1.0rem"
                                 })), React.createElement("span", undefined, "Github")), React.createElement("a", {
-                          className: navBarItem
+                          className: navBarItem,
+                          href: "/contact"
                         }, React.createElement("span", {
                               className: "icon"
                             }, React.createElement(Icons$MyBlog.Contact[/* make */0], {

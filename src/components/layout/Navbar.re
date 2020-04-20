@@ -35,11 +35,12 @@ module Style = {
     merge([
       style([
         fontSize(Sizes.small),
+        fontWeight(`bold),
         paddingRight(rem(2.0)),
         display(`flex),
         justifyContent(`center),
         alignItems(`center),
-        color(Colors.black),
+        color(Colors.white),
       ]),
       "navbar-menu",
     ]);
@@ -48,7 +49,9 @@ module Style = {
 [@react.component]
 let make = () =>
   <nav
-    className="navbar is-light" role="navigation" ariaLabel="main navigation">
+    className="navbar is-primary"
+    role="navigation"
+    ariaLabel="main navigation">
     <div className=Style.navBarBrand>
       <h1 className=Style.navBarTitle>
         {"Martin Minkov" |> ReasonReact.string}
@@ -71,7 +74,7 @@ let make = () =>
           <span className="icon"> <Icons.Github height="1.0rem" /> </span>
           <span> {"Github" |> ReasonReact.string} </span>
         </a>
-        <a className=Style.navBarItem>
+        <a className=Style.navBarItem href="/contact">
           <span className="icon"> <Icons.Contact height="1.0rem" /> </span>
           <span> {"Contact" |> ReasonReact.string} </span>
         </a>

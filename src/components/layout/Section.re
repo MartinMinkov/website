@@ -1,11 +1,15 @@
 module Style = {
   open Css;
+
   let sectionContainer =
     merge([
       style([
         display(`grid),
         gridTemplateColumns([`rem(1.0), `fr(1.0)]),
-        gridTemplateRows([`minmax((`rem(5.0), `fr(1.0))), `fr(1.0)]),
+        gridTemplateRows([
+          `minmax((`rem(1.0), `fr(1.0))),
+          `minmax((`rem(1.0), `fr(1.0))),
+        ]),
         gridColumnGap(rem(1.0)),
         alignItems(`start),
         justifyContent(`center),

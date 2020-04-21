@@ -16,9 +16,7 @@ let s = s => ReasonReact.string(s);
 let make = () =>
   <div>
     <div>
-      <Section
-        title="Some fun facts about my hobbies"
-        icon={<Icons.Wave height="2rem" />}>
+      <Section title="Some fun facts about my hobbies">
         <p>
           {s(
              "While you're here on this website, might as well learn a few fun facts that I find interesting!",
@@ -27,8 +25,7 @@ let make = () =>
       </Section>
     </div>
     <div className=Style.funfactsContainer>
-      <Section
-        title="Olympic Weightlifting" icon={<Icons.Wave height="2rem" />}>
+      <Section title="Olympic Weightlifting">
         <p>
           {s(
              "Olympic Weightlifting  made its first appearence in the 1896 Olympics and then again in 1904;
@@ -37,7 +34,7 @@ let make = () =>
         </p>
         <img src="static/gifs/oly.gif" className=Style.funFactImage />
       </Section>
-      <Section title="Programming" icon={<Icons.Github height="2rem" />}>
+      <Section title="Programming">
         <p>
           {s(
              "Grace Murray Hopper was one of the first computer programmers to work on the Harvard Mark I.
@@ -51,7 +48,7 @@ let make = () =>
           className=Style.funFactImage
         />
       </Section>
-      <Section title="Web Development" icon={<Icons.Github height="2rem" />}>
+      <Section title="Web Development">
         <p>
           {s(
              "This website was built with Reason and Next.js, which has been really fun to work with. Reason lets you write
@@ -60,10 +57,10 @@ let make = () =>
         </p>
         <img src="static/images/reason.png" className=Style.funFactImage />
       </Section>
-      <Section title="BJJ" icon={<Icons.Github height="2rem" />}>
+      <Section title="BJJ">
         <p>
           {s(
-             "BJJ is a relatively new martial art, originating from Rio de Jeneiro in the 1920s. Nowadays, it takes an average
+             "Brazilian Jiu Jitsu is a relatively new martial art, originating from Rio de Jeneiro in the 1920s. Nowadays, it takes an average
         of 8-12 years to get a black belt in the sport and is practiced by many around the world. There is never an age
         that is too old to start!",
            )}

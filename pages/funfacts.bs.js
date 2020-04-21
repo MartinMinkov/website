@@ -2,7 +2,6 @@
 
 import * as Css from "bs-css/src/Css.js";
 import * as React from "react";
-import * as Icons$Website from "../src/bindings/Icons.bs.js";
 import * as Section$Website from "../src/components/layout/Section.bs.js";
 
 var funfactsContainer = Css.style(/* :: */[
@@ -57,46 +56,31 @@ function s(s$1) {
 function Funfacts(Props) {
   return React.createElement("div", undefined, React.createElement("div", undefined, React.createElement(Section$Website.make, {
                       title: "Some fun facts about my hobbies",
-                      icon: React.createElement(Icons$Website.Wave[/* make */0], {
-                            height: "2rem"
-                          }),
                       children: React.createElement("p", undefined, "While you're here on this website, might as well learn a few fun facts that I find interesting!")
                     })), React.createElement("div", {
                   className: funfactsContainer
                 }, React.createElement(Section$Website.make, {
                       title: "Olympic Weightlifting",
-                      icon: React.createElement(Icons$Website.Wave[/* make */0], {
-                            height: "2rem"
-                          }),
                       children: null
                     }, React.createElement("p", undefined, "Olympic Weightlifting  made its first appearence in the 1896 Olympics and then again in 1904;\n        however, it wasn't until 1920 that it was permanently established as an Olympic Sport."), React.createElement("img", {
                           className: funFactImage,
                           src: "static/gifs/oly.gif"
                         })), React.createElement(Section$Website.make, {
                       title: "Programming",
-                      icon: React.createElement(Icons$Website.Github[/* make */0], {
-                            height: "2rem"
-                          }),
                       children: null
                     }, React.createElement("p", undefined, "Grace Murray Hopper was one of the first computer programmers to work on the Harvard Mark I.\n             She was also a United States Navy rear admiral, helped develop COBOL -- one of the first high-level\n             programming languages -- and invented the first compiler, a program that translates programming code\n             to machine language."), React.createElement("img", {
                           className: funFactImage,
                           src: "static/images/gracehopper.jpg"
                         })), React.createElement(Section$Website.make, {
                       title: "Web Development",
-                      icon: React.createElement(Icons$Website.Github[/* make */0], {
-                            height: "2rem"
-                          }),
                       children: null
                     }, React.createElement("p", undefined, "This website was built with Reason and Next.js, which has been really fun to work with. Reason lets you write\n        simple, fast and quality type safe code while leveraging both the JavaScript & OCaml ecosystems."), React.createElement("img", {
                           className: funFactImage,
                           src: "static/images/reason.png"
                         })), React.createElement(Section$Website.make, {
                       title: "BJJ",
-                      icon: React.createElement(Icons$Website.Github[/* make */0], {
-                            height: "2rem"
-                          }),
                       children: null
-                    }, React.createElement("p", undefined, "BJJ is a relatively new martial art, originating from Rio de Jeneiro in the 1920s. Nowadays, it takes an average\n        of 8-12 years to get a black belt in the sport and is practiced by many around the world. There is never an age\n        that is too old to start!"), React.createElement("img", {
+                    }, React.createElement("p", undefined, "Brazilian Jiu Jitsu is a relatively new martial art, originating from Rio de Jeneiro in the 1920s. Nowadays, it takes an average\n        of 8-12 years to get a black belt in the sport and is practiced by many around the world. There is never an age\n        that is too old to start!"), React.createElement("img", {
                           className: funFactImage,
                           src: "static/images/bjj.jpg"
                         }))));

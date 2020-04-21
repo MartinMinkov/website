@@ -8,7 +8,7 @@ let make = (~children) => {
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
       />
-      <title> {React.string("Martins Website")} </title>
+      <title> {React.string("mminkov.dev")} </title>
     </Next.Head>
     <Navbar />
     children

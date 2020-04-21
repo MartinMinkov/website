@@ -2,9 +2,9 @@
 
 import * as Css from "bs-css/src/Css.js";
 import * as React from "react";
-import * as Icons$MyBlog from "../src/bindings/Icons.bs.js";
-import * as Section$MyBlog from "../src/components/layout/Section.bs.js";
-import * as IconSection$MyBlog from "../src/components/layout/IconSection.bs.js";
+import * as Icons$Website from "../src/bindings/Icons.bs.js";
+import * as Section$Website from "../src/components/layout/Section.bs.js";
+import * as IconSection$Website from "../src/components/layout/IconSection.bs.js";
 
 var contactContainer = Css.style(/* :: */[
       Css.marginLeft(/* `rem */[
@@ -17,35 +17,35 @@ var contactContainer = Css.style(/* :: */[
 var Style = /* module */[/* contactContainer */contactContainer];
 
 function Contact(Props) {
-  return React.createElement("div", undefined, React.createElement(Section$MyBlog.make, {
+  return React.createElement("div", undefined, React.createElement(Section$Website.make, {
                   title: "How to contact me",
                   subtitle: "Feel free to reach me, I am active on all the platforms listed.",
-                  icon: React.createElement(Icons$MyBlog.Wave[/* make */0], {
+                  icon: React.createElement(Icons$Website.Wave[/* make */0], {
                         height: "2rem"
                       })
                 }), React.createElement("div", {
                   className: contactContainer
-                }, React.createElement(IconSection$MyBlog.make, {
+                }, React.createElement(IconSection$Website.make, {
                       title: "minkovlmartin@gmail.com",
-                      icon: React.createElement(Icons$MyBlog.Mail[/* make */0], {
+                      icon: React.createElement(Icons$Website.Mail[/* make */0], {
                             height: "2rem"
                           }),
                       href: "mailto:minkovlmartin@gmail.com"
-                    }), React.createElement(IconSection$MyBlog.make, {
+                    }), React.createElement(IconSection$Website.make, {
                       title: "linkedin.com/in/martinlminkov",
-                      icon: React.createElement(Icons$MyBlog.LinkedIn[/* make */0], {
+                      icon: React.createElement(Icons$Website.LinkedIn[/* make */0], {
                             height: "2rem"
                           }),
                       href: "https://www.linkedin.com/in/martinlminkov"
-                    }), React.createElement(IconSection$MyBlog.make, {
+                    }), React.createElement(IconSection$Website.make, {
                       title: "twitter.com/Greenliketrees",
-                      icon: React.createElement(Icons$MyBlog.Twitter[/* make */0], {
+                      icon: React.createElement(Icons$Website.Twitter[/* make */0], {
                             height: "2rem"
                           }),
                       href: "https://www.twitter.com/Greenliketrees"
-                    }), React.createElement(IconSection$MyBlog.make, {
+                    }), React.createElement(IconSection$Website.make, {
                       title: "Resume",
-                      icon: React.createElement(Icons$MyBlog.Resume[/* make */0], {
+                      icon: React.createElement(Icons$Website.Resume[/* make */0], {
                             height: "2rem"
                           }),
                       href: "/static/MartinMinkovResume.pdf"

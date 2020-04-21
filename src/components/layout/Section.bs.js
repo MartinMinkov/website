@@ -2,7 +2,7 @@
 
 import * as Css from "bs-css/src/Css.js";
 import * as React from "react";
-import * as Style$MyBlog from "./Style.bs.js";
+import * as Style$Website from "./Style.bs.js";
 
 var sectionContainer = Css.merge(/* :: */[
       Css.style(/* :: */[
@@ -70,7 +70,7 @@ var sectionText = Css.style(/* :: */[
 
 var sectionTitle = Css.merge(/* :: */[
       Css.style(/* :: */[
-            Css.fontSize(Style$MyBlog.Sizes[/* large */0]),
+            Css.fontSize(Style$Website.Sizes[/* large */0]),
             /* [] */0
           ]),
       /* :: */[

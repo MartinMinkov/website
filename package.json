@@ -5,7 +5,9 @@
   "scripts": {
     "dev:next": "next dev",
     "dev:reason": "bsb -clean-world -make-world -w",
-    "build": "next build",
+    "clean": "bsb -clean-world && rm -rf /out",
+    "build": "bsb -make-world || yarn gen-rss && bsb -make-world && next build",
+    "export": "yarn build && next export",
     "start": "next start"
   },
   "dependencies": {

@@ -2,9 +2,9 @@
 
 import * as Css from "bs-css/src/Css.js";
 import * as React from "react";
-import * as Icons$MyBlog from "../src/bindings/Icons.bs.js";
-import * as Gallery$MyBlog from "../src/components/layout/Gallery.bs.js";
-import * as Section$MyBlog from "../src/components/layout/Section.bs.js";
+import * as Icons$Website from "../src/bindings/Icons.bs.js";
+import * as Gallery$Website from "../src/components/layout/Gallery.bs.js";
+import * as Section$Website from "../src/components/layout/Section.bs.js";
 
 var indexContainer = Css.style(/* :: */[
       Css.display(/* flex */-1010954439),
@@ -24,11 +24,11 @@ function s(s$1) {
 }
 
 function Index(Props) {
-  return React.createElement("div", undefined, React.createElement(Gallery$MyBlog.make, { }), React.createElement("div", {
+  return React.createElement("div", undefined, React.createElement(Gallery$Website.make, { }), React.createElement("div", {
                   className: indexContainer
-                }, React.createElement(Section$MyBlog.make, {
+                }, React.createElement(Section$Website.make, {
                       title: "Hey, I'm Martin - A software developer from Canada",
-                      icon: React.createElement(Icons$MyBlog.Wave[/* make */0], {
+                      icon: React.createElement(Icons$Website.Wave[/* make */0], {
                             height: "2rem"
                           }),
                       children: React.createElement("p", undefined, "I'm a 4th year computer science student at ", React.createElement("a", {
@@ -36,9 +36,9 @@ function Index(Props) {
                               }, "Simon Fraser University "), "I've also previously graduated from ", React.createElement("a", {
                                 href: "https://www.bcit.ca/"
                               }, "BCIT"), " with a 2 year diploma. I enjoy working with new technologies and being exposed to all kinds of ideas.\n             Feel free to get in touch with me!")
-                    }), React.createElement(Section$MyBlog.make, {
+                    }), React.createElement(Section$Website.make, {
                       title: "Development Experience",
-                      icon: React.createElement(Icons$MyBlog.Github[/* make */0], {
+                      icon: React.createElement(Icons$Website.Github[/* make */0], {
                             height: "2rem"
                           }),
                       children: React.createElement("p", undefined, "I have experience working with various languages and frameworks.\n             At BCIT, I was exposed to a lot of C++ and networking principles.\n             At SFU, I have taken a more general approach and have taken courses in compiler design and implementation, embedded development,\n             computational complexity, and parallel programming. In my free time, I like to work on web development projects\n             and genuinely enjoy working with React.")

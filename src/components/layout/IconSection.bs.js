@@ -2,7 +2,7 @@
 
 import * as Css from "bs-css/src/Css.js";
 import * as React from "react";
-import * as Style$MyBlog from "./Style.bs.js";
+import * as Style$Website from "./Style.bs.js";
 
 var iconSectionContainer = Css.merge(/* :: */[
       Css.style(/* :: */[
@@ -23,7 +23,7 @@ var iconSectionContainer = Css.merge(/* :: */[
 
 var iconSectionTitle = Css.merge(/* :: */[
       Css.style(/* :: */[
-            Css.fontSize(Style$MyBlog.Sizes[/* medium */1]),
+            Css.fontSize(Style$Website.Sizes[/* medium */1]),
             /* [] */0
           ]),
       /* :: */[

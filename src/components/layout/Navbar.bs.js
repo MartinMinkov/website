@@ -2,8 +2,8 @@
 
 import * as Css from "bs-css/src/Css.js";
 import * as React from "react";
-import * as Icons$MyBlog from "../../bindings/Icons.bs.js";
-import * as Style$MyBlog from "./Style.bs.js";
+import * as Icons$Website from "../../bindings/Icons.bs.js";
+import * as Style$Website from "./Style.bs.js";
 
 var navBarBrand = Css.merge(/* :: */[
       Css.style(/* :: */[
@@ -33,7 +33,7 @@ var navBarBrand = Css.merge(/* :: */[
 
 var navBarTitle = Css.merge(/* :: */[
       Css.style(/* :: */[
-            Css.fontSize(Style$MyBlog.Sizes[/* large */0]),
+            Css.fontSize(Style$Website.Sizes[/* large */0]),
             /* [] */0
           ]),
       /* :: */[
@@ -53,7 +53,7 @@ var navBarTitle = Css.merge(/* :: */[
 
 var navBarSubtitle = Css.merge(/* :: */[
       Css.style(/* :: */[
-            Css.fontSize(Style$MyBlog.Sizes[/* small */2]),
+            Css.fontSize(Style$Website.Sizes[/* small */2]),
             /* [] */0
           ]),
       /* :: */[
@@ -67,7 +67,7 @@ var navBarSubtitle = Css.merge(/* :: */[
 
 var navBarMenu = Css.merge(/* :: */[
       Css.style(/* :: */[
-            Css.fontSize(Style$MyBlog.Sizes[/* small */2]),
+            Css.fontSize(Style$Website.Sizes[/* small */2]),
             /* :: */[
               Css.paddingRight(Css.rem(2.0)),
               /* [] */0
@@ -81,7 +81,7 @@ var navBarMenu = Css.merge(/* :: */[
 
 var navBarItem = Css.merge(/* :: */[
       Css.style(/* :: */[
-            Css.fontSize(Style$MyBlog.Sizes[/* small */2]),
+            Css.fontSize(Style$Website.Sizes[/* small */2]),
             /* :: */[
               Css.fontWeight(/* bold */-1055161979),
               /* :: */[
@@ -93,7 +93,7 @@ var navBarItem = Css.merge(/* :: */[
                     /* :: */[
                       Css.alignItems(/* center */98248149),
                       /* :: */[
-                        Css.color(Style$MyBlog.Colors[/* white */5]),
+                        Css.color(Style$Website.Colors[/* white */5]),
                         /* [] */0
                       ]
                     ]
@@ -140,28 +140,28 @@ function Navbar(Props) {
                           href: "/"
                         }, React.createElement("span", {
                               className: "icon"
-                            }, React.createElement(Icons$MyBlog.Home[/* make */0], {
+                            }, React.createElement(Icons$Website.Home[/* make */0], {
                                   height: "1.0rem"
                                 })), React.createElement("span", undefined, "Home")), React.createElement("a", {
                           className: navBarItem,
                           href: "/funfacts"
                         }, React.createElement("span", {
                               className: "icon"
-                            }, React.createElement(Icons$MyBlog.Fact[/* make */0], {
+                            }, React.createElement(Icons$Website.Fact[/* make */0], {
                                   height: "1.0rem"
                                 })), React.createElement("span", undefined, "Fun Facts")), React.createElement("a", {
                           className: navBarItem,
                           href: "https://github.com/martinminkov/"
                         }, React.createElement("span", {
                               className: "icon"
-                            }, React.createElement(Icons$MyBlog.Github[/* make */0], {
+                            }, React.createElement(Icons$Website.Github[/* make */0], {
                                   height: "1.0rem"
                                 })), React.createElement("span", undefined, "Github")), React.createElement("a", {
                           className: navBarItem,
                           href: "/contact"
                         }, React.createElement("span", {
                               className: "icon"
-                            }, React.createElement(Icons$MyBlog.Contact[/* make */0], {
+                            }, React.createElement(Icons$Website.Contact[/* make */0], {
                                   height: "1.0rem"
                                 })), React.createElement("span", undefined, "Contact")))));
 }

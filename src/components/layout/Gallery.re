@@ -1,5 +1,3 @@
-open Style;
-
 module Style = {
   open Css;
 

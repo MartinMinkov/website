@@ -2,50 +2,96 @@
 
 import * as Css from "bs-css/src/Css.js";
 import * as React from "react";
+import * as Style$Website from "../src/components/layout/Style.bs.js";
 import * as Section$Website from "../src/components/layout/Section.bs.js";
 
-var funfactsContainer = Css.style(/* :: */[
+var funFactText = Css.selector("p", /* :: */[
+      Css.fontSize(Style$Website.Sizes[/* medium */1]),
+      /* [] */0
+    ]);
+
+var titleContainer = Css.style(/* :: */[
+      Css.display(/* flex */-1010954439),
+      /* :: */[
+        Css.flexDirection(/* column */-963948842),
+        /* :: */[
+          Css.justifyContent(/* center */98248149),
+          /* :: */[
+            Css.alignItems(/* center */98248149),
+            /* :: */[
+              funFactText,
+              /* [] */0
+            ]
+          ]
+        ]
+      ]
+    ]);
+
+var funFactContainer = Css.style(/* :: */[
       Css.display(/* grid */-999565626),
       /* :: */[
         Css.gridTemplateColumns(/* :: */[
-              /* `fr */[
-                22860,
-                1.0
+              /* `repeat */[
+                108828507,
+                /* tuple */[
+                  /* autoFit */494053794,
+                  /* `minmax */[
+                    -754859950,
+                    /* tuple */[
+                      /* `rem */[
+                        5691738,
+                        60.0
+                      ],
+                      /* `fr */[
+                        22860,
+                        1.0
+                      ]
+                    ]
+                  ]
+                ]
               ],
-              /* :: */[
-                /* `fr */[
-                  22860,
-                  1.0
-                ],
-                /* [] */0
-              ]
+              /* [] */0
             ]),
         /* :: */[
-          Css.marginLeft(/* `rem */[
+          Css.alignItems(/* start */67859554),
+          /* :: */[
+            Css.marginLeft(/* `rem */[
+                  5691738,
+                  5.0
+                ]),
+            /* :: */[
+              funFactText,
+              /* [] */0
+            ]
+          ]
+        ]
+      ]
+    ]);
+
+var funFactImage = Css.style(/* :: */[
+      Css.marginTop(/* `rem */[
+            5691738,
+            2.0
+          ]),
+      /* :: */[
+        Css.width(/* `rem */[
+              5691738,
+              30.0
+            ]),
+        /* :: */[
+          Css.height(/* `rem */[
                 5691738,
-                5.0
+                20.0
               ]),
           /* [] */0
         ]
       ]
     ]);
 
-var funFactImage = Css.style(/* :: */[
-      Css.width(/* `rem */[
-            5691738,
-            30.0
-          ]),
-      /* :: */[
-        Css.height(/* `rem */[
-              5691738,
-              20.0
-            ]),
-        /* [] */0
-      ]
-    ]);
-
 var Style = /* module */[
-  /* funfactsContainer */funfactsContainer,
+  /* funFactText */funFactText,
+  /* titleContainer */titleContainer,
+  /* funFactContainer */funFactContainer,
   /* funFactImage */funFactImage
 ];
 
@@ -54,11 +100,13 @@ function s(s$1) {
 }
 
 function Funfacts(Props) {
-  return React.createElement("div", undefined, React.createElement("div", undefined, React.createElement(Section$Website.make, {
+  return React.createElement("div", undefined, React.createElement("div", {
+                  className: titleContainer
+                }, React.createElement(Section$Website.make, {
                       title: "Some fun facts about my hobbies",
                       children: React.createElement("p", undefined, "While you're here on this website, might as well learn a few fun facts that I find interesting!")
                     })), React.createElement("div", {
-                  className: funfactsContainer
+                  className: funFactContainer
                 }, React.createElement(Section$Website.make, {
                       title: "Olympic Weightlifting",
                       children: null
@@ -98,4 +146,4 @@ export {
   $$default as default,
   
 }
-/* funfactsContainer Not a pure module */
+/* funFactText Not a pure module */

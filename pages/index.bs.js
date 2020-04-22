@@ -3,8 +3,14 @@
 import * as Css from "bs-css/src/Css.js";
 import * as React from "react";
 import * as Icons$Website from "../src/bindings/Icons.bs.js";
+import * as Style$Website from "../src/components/layout/Style.bs.js";
 import * as Gallery$Website from "../src/components/layout/Gallery.bs.js";
 import * as Section$Website from "../src/components/layout/Section.bs.js";
+
+var indexText = Css.selector("p", /* :: */[
+      Css.fontSize(Style$Website.Sizes[/* medium */1]),
+      /* [] */0
+    ]);
 
 var indexContainer = Css.style(/* :: */[
       Css.display(/* flex */-1010954439),
@@ -14,13 +20,19 @@ var indexContainer = Css.style(/* :: */[
           Css.flexWrap(/* wrap */-822134326),
           /* :: */[
             Css.alignItems(/* start */67859554),
-            /* [] */0
+            /* :: */[
+              indexText,
+              /* [] */0
+            ]
           ]
         ]
       ]
     ]);
 
-var Style = /* module */[/* indexContainer */indexContainer];
+var Style = /* module */[
+  /* indexText */indexText,
+  /* indexContainer */indexContainer
+];
 
 function s(s$1) {
   return s$1;
@@ -32,7 +44,7 @@ function Index(Props) {
                 }, React.createElement(Section$Website.make, {
                       title: "Hey, I'm Martin - A software developer from Canada",
                       icon: React.createElement(Icons$Website.Wave[/* make */0], {
-                            height: "2rem"
+                            height: "4rem"
                           }),
                       children: React.createElement("p", undefined, "I'm a 4th year computer science student at ", React.createElement("a", {
                                 href: "https://www.sfu.ca/"
@@ -42,7 +54,7 @@ function Index(Props) {
                     }), React.createElement(Section$Website.make, {
                       title: "Development Experience",
                       icon: React.createElement(Icons$Website.Github[/* make */0], {
-                            height: "2rem"
+                            height: "4rem"
                           }),
                       children: React.createElement("p", undefined, "I have experience working with various languages and frameworks.\n             At BCIT, I was exposed to a lot of C++ and networking principles.\n             At SFU, I have taken a more general approach and have taken courses in compiler design and implementation, embedded development,\n             computational complexity, and parallel programming. In my free time, I like to work on web development projects\n             and genuinely enjoy working with React.")
                     })));
@@ -60,4 +72,4 @@ export {
   $$default as default,
   
 }
-/* indexContainer Not a pure module */
+/* indexText Not a pure module */

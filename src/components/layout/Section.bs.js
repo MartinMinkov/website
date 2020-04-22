@@ -68,6 +68,17 @@ var sectionText = Css.style(/* :: */[
       ]
     ]);
 
+var sectionSubtitle = Css.merge(/* :: */[
+      Css.style(/* :: */[
+            Css.fontSize(Style$Website.Sizes[/* medium */1]),
+            /* [] */0
+          ]),
+      /* :: */[
+        "subtitle",
+        /* [] */0
+      ]
+    ]);
+
 var sectionTitle = Css.merge(/* :: */[
       Css.style(/* :: */[
             Css.fontSize(Style$Website.Sizes[/* large */0]),
@@ -93,6 +104,7 @@ var sectionIcon = Css.merge(/* :: */[
 var Style = /* module */[
   /* sectionContainer */sectionContainer,
   /* sectionText */sectionText,
+  /* sectionSubtitle */sectionSubtitle,
   /* sectionTitle */sectionTitle,
   /* sectionIcon */sectionIcon
 ];
@@ -113,7 +125,7 @@ function Section(Props) {
                     }, React.createElement("h1", {
                           className: sectionTitle
                         }, title), React.createElement("h2", {
-                          className: "subtitle"
+                          className: sectionSubtitle
                         }, subtitle), children)));
 }
 

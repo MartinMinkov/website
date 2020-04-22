@@ -1,13 +1,34 @@
 module Style = {
   open Css;
-  let funfactsContainer =
+
+  let funFactText = selector("p", [fontSize(Style.Sizes.medium)]);
+
+  let titleContainer =
     style([
-      display(`grid),
-      gridTemplateColumns([`fr(1.0), `fr(1.0)]),
-      marginLeft(`rem(5.0)),
+      display(`flex),
+      flexDirection(`column),
+      justifyContent(`center),
+      alignItems(`center),
+      funFactText,
     ]);
 
-  let funFactImage = style([width(`rem(30.0)), height(`rem(20.0))]);
+  let funFactContainer =
+    style([
+      display(`grid),
+      gridTemplateColumns([
+        `repeat((`autoFit, `minmax((`rem(60.0), `fr(1.0))))),
+      ]),
+      alignItems(`start),
+      marginLeft(`rem(5.0)),
+      funFactText,
+    ]);
+
+  let funFactImage =
+    style([
+      marginTop(`rem(2.0)),
+      width(`rem(30.0)),
+      height(`rem(20.0)),
+    ]);
 };
 
 let s = s => ReasonReact.string(s);
@@ -15,7 +36,7 @@ let s = s => ReasonReact.string(s);
 [@react.component]
 let make = () =>
   <div>
-    <div>
+    <div className=Style.titleContainer>
       <Section title="Some fun facts about my hobbies">
         <p>
           {s(
@@ -24,7 +45,7 @@ let make = () =>
         </p>
       </Section>
     </div>
-    <div className=Style.funfactsContainer>
+    <div className=Style.funFactContainer>
       <Section title="Olympic Weightlifting">
         <p>
           {s(

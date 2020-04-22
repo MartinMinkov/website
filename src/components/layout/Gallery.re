@@ -5,12 +5,7 @@ module Style = {
     style([
       display(`grid),
       gridTemplateColumns([
-        fr(1.0),
-        fr(1.0),
-        fr(1.0),
-        fr(1.0),
-        fr(1.0),
-        fr(1.0),
+        `repeat((`autoFit, `minmax((`rem(28.0), `fr(1.0))))),
       ]),
     ]);
 

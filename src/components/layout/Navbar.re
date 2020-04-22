@@ -3,6 +3,9 @@ open Style;
 module Style = {
   open Css;
 
+  let navBar =
+    merge([style([width(`percent(100.0))]), "navbar", "is-primary"]);
+
   let navBarBrand =
     merge([
       style([
@@ -56,15 +59,25 @@ module Style = {
         display(`flex),
         justifyContent(`center),
         alignItems(`center),
+        fontSize(Sizes.medium),
+        letterSpacing(`px(1)),
       ]),
       "navbar-item",
     ]);
 
   let navBarLink = (menuIsActive: bool) =>
     if (menuIsActive) {
-      style([fontWeight(`bold), color(Colors.black)]);
+      style([
+        fontWeight(`semiBold),
+        color(Colors.black),
+        paddingLeft(`rem(1.0)),
+      ]);
     } else {
-      style([fontWeight(`bold), color(Colors.white)]);
+      style([
+        fontWeight(`semiBold),
+        color(Colors.white),
+        paddingLeft(`rem(1.0)),
+      ]);
     };
 };
 
@@ -88,7 +101,7 @@ let make = () => {
   let (state, dispatch) = React.useReducer(reducer, initialState);
 
   <div className="hero-head">
-    <nav id="topnav" className="navbar is-primary">
+    <nav id="topnav" className=Style.navBar>
       <div className="container">
         <div className=Style.navBarBrand>
           <Next.Link href="/">
@@ -108,7 +121,7 @@ let make = () => {
         <div id="navbarMenu" className={Style.navBarMenu(state.menuIsActive)}>
           <div className="navbar-end">
             <div className=Style.navBarItem>
-              <span className="icon"> <Icons.Home height="1.0rem" /> </span>
+              <span className="icon"> <Icons.Home height="4.0rem" /> </span>
               <Next.Link href="/">
                 <a className={Style.navBarLink(state.menuIsActive)}>
                   {s("Home")}
@@ -116,7 +129,7 @@ let make = () => {
               </Next.Link>
             </div>
             <div className=Style.navBarItem>
-              <span className="icon"> <Icons.Fact height="1.0rem" /> </span>
+              <span className="icon"> <Icons.Fact height="4.0rem" /> </span>
               <Next.Link href="/funfacts">
                 <a className={Style.navBarLink(state.menuIsActive)}>
                   {s("Fun Facts")}
@@ -124,7 +137,7 @@ let make = () => {
               </Next.Link>
             </div>
             <div className=Style.navBarItem>
-              <span className="icon"> <Icons.Github height="1.0rem" /> </span>
+              <span className="icon"> <Icons.Github height="4.0rem" /> </span>
               <a
                 className={Style.navBarLink(state.menuIsActive)}
                 href="https://github.com/martinminkov/">
@@ -132,7 +145,7 @@ let make = () => {
               </a>
             </div>
             <div className=Style.navBarItem>
-              <span className="icon"> <Icons.Contact height="1.0rem" /> </span>
+              <span className="icon"> <Icons.Contact height="4.0rem" /> </span>
               <Next.Link href="/contact">
                 <a className={Style.navBarLink(state.menuIsActive)}>
                   {s("Contact")}

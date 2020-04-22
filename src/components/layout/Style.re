@@ -9,18 +9,20 @@ module Colors = {
 };
 
 module Sizes = {
-  let large = `rem(1.8); //18px
-  let medium = `rem(1.2); //12px
-  let small = `rem(0.8); //8px
+  let large = `rem(3.2); //18px
+  let medium = `rem(1.8); //12px
+  let small = `rem(1.2); //8px
 };
 
 module Control = {
-  let defaults = () =>
-    Css.(
+  Css.(
+    global(
       "html",
       [
         boxSizing(`borderBox),
         fontSize(`percent(62.5)) // set default brosser size to 10px.
       ],
-    );
+    )
+  );
+  Css.(global("body", [minWidth(`fitContent)]));
 };

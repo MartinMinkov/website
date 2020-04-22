@@ -7,6 +7,23 @@ import * as Link from "next/link";
 import * as Icons$Website from "../../bindings/Icons.bs.js";
 import * as Style$Website from "./Style.bs.js";
 
+var navBar = Css.merge(/* :: */[
+      Css.style(/* :: */[
+            Css.width(/* `percent */[
+                  -119887163,
+                  100.0
+                ]),
+            /* [] */0
+          ]),
+      /* :: */[
+        "navbar",
+        /* :: */[
+          "is-primary",
+          /* [] */0
+        ]
+      ]
+    ]);
+
 var navBarBrand = Css.merge(/* :: */[
       Css.style(/* :: */[
             Css.display(/* flex */-1010954439),
@@ -111,7 +128,16 @@ var navBarItem = Css.merge(/* :: */[
                 Css.justifyContent(/* center */98248149),
                 /* :: */[
                   Css.alignItems(/* center */98248149),
-                  /* [] */0
+                  /* :: */[
+                    Css.fontSize(Style$Website.Sizes[/* medium */1]),
+                    /* :: */[
+                      Css.letterSpacing(/* `px */[
+                            25096,
+                            1
+                          ]),
+                      /* [] */0
+                    ]
+                  ]
                 ]
               ]
             ]
@@ -125,24 +151,37 @@ var navBarItem = Css.merge(/* :: */[
 function navBarLink(menuIsActive) {
   if (menuIsActive) {
     return Css.style(/* :: */[
-                Css.fontWeight(/* bold */-1055161979),
+                Css.fontWeight(/* semiBold */-812709613),
                 /* :: */[
                   Css.color(Style$Website.Colors[/* black */6]),
-                  /* [] */0
+                  /* :: */[
+                    Css.paddingLeft(/* `rem */[
+                          5691738,
+                          1.0
+                        ]),
+                    /* [] */0
+                  ]
                 ]
               ]);
   } else {
     return Css.style(/* :: */[
-                Css.fontWeight(/* bold */-1055161979),
+                Css.fontWeight(/* semiBold */-812709613),
                 /* :: */[
                   Css.color(Style$Website.Colors[/* white */5]),
-                  /* [] */0
+                  /* :: */[
+                    Css.paddingLeft(/* `rem */[
+                          5691738,
+                          1.0
+                        ]),
+                    /* [] */0
+                  ]
                 ]
               ]);
   }
 }
 
 var Style = /* module */[
+  /* navBar */navBar,
   /* navBarBrand */navBarBrand,
   /* navBarTitle */navBarTitle,
   /* navBarBurger */navBarBurger,
@@ -169,7 +208,7 @@ function Navbar(Props) {
   return React.createElement("div", {
               className: "hero-head"
             }, React.createElement("nav", {
-                  className: "navbar is-primary",
+                  className: navBar,
                   id: "topnav"
                 }, React.createElement("div", {
                       className: "container"
@@ -197,7 +236,7 @@ function Navbar(Props) {
                                 }, React.createElement("span", {
                                       className: "icon"
                                     }, React.createElement(Icons$Website.Home[/* make */0], {
-                                          height: "1.0rem"
+                                          height: "4.0rem"
                                         })), React.createElement(Link.default, {
                                       href: "/",
                                       children: React.createElement("a", {
@@ -208,7 +247,7 @@ function Navbar(Props) {
                                 }, React.createElement("span", {
                                       className: "icon"
                                     }, React.createElement(Icons$Website.Fact[/* make */0], {
-                                          height: "1.0rem"
+                                          height: "4.0rem"
                                         })), React.createElement(Link.default, {
                                       href: "/funfacts",
                                       children: React.createElement("a", {
@@ -219,7 +258,7 @@ function Navbar(Props) {
                                 }, React.createElement("span", {
                                       className: "icon"
                                     }, React.createElement(Icons$Website.Github[/* make */0], {
-                                          height: "1.0rem"
+                                          height: "4.0rem"
                                         })), React.createElement("a", {
                                       className: navBarLink(state[/* menuIsActive */0]),
                                       href: "https://github.com/martinminkov/"
@@ -228,7 +267,7 @@ function Navbar(Props) {
                                 }, React.createElement("span", {
                                       className: "icon"
                                     }, React.createElement(Icons$Website.Contact[/* make */0], {
-                                          height: "1.0rem"
+                                          height: "4.0rem"
                                         })), React.createElement(Link.default, {
                                       href: "/contact",
                                       children: React.createElement("a", {
@@ -251,4 +290,4 @@ export {
   $$default as default,
   
 }
-/* navBarBrand Not a pure module */
+/* navBar Not a pure module */

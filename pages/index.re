@@ -1,11 +1,15 @@
 module Style = {
   open Css;
+
+  let indexText = selector("p", [fontSize(Style.Sizes.medium)]);
+
   let indexContainer =
     style([
       display(`flex),
       justifyContent(`spaceBetween),
       flexWrap(`wrap),
       alignItems(`start),
+      indexText,
     ]);
 };
 
@@ -18,7 +22,7 @@ let make = () =>
     <div className=Style.indexContainer>
       <Section
         title="Hey, I'm Martin - A software developer from Canada"
-        icon={<Icons.Wave height="2rem" />}>
+        icon={<Icons.Wave height="4rem" />}>
         <p>
           {s("I'm a 4th year computer science student at ")}
           <a href="https://www.sfu.ca/"> {s("Simon Fraser University ")} </a>
@@ -31,7 +35,7 @@ let make = () =>
         </p>
       </Section>
       <Section
-        title="Development Experience" icon={<Icons.Github height="2rem" />}>
+        title="Development Experience" icon={<Icons.Github height="4rem" />}>
         <p>
           {s(
              "I have experience working with various languages and frameworks.

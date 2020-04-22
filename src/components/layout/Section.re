@@ -21,6 +21,9 @@ module Style = {
       justifyContent(`spaceEvenly),
     ]);
 
+  let sectionSubtitle =
+    merge([style([fontSize(Style.Sizes.medium)]), "subtitle"]);
+
   let sectionTitle = merge([style([fontSize(Style.Sizes.large)]), "title"]);
 
   let sectionIcon = merge([style([justifySelf(`center)]), "icon"]);
@@ -39,7 +42,9 @@ let make =
       <span className=Style.sectionIcon> icon </span>
       <div className=Style.sectionText>
         <h1 className=Style.sectionTitle> {title |> ReasonReact.string} </h1>
-        <h2 className="subtitle"> {subtitle |> ReasonReact.string} </h2>
+        <h2 className=Style.sectionSubtitle>
+          {subtitle |> ReasonReact.string}
+        </h2>
         children
       </div>
     </div>

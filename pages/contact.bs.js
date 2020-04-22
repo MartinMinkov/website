@@ -19,10 +19,7 @@ var Style = /* module */[/* contactContainer */contactContainer];
 function Contact(Props) {
   return React.createElement("div", undefined, React.createElement(Section$Website.make, {
                   title: "How to contact me",
-                  subtitle: "Feel free to reach me, I am active on all the platforms listed.",
-                  icon: React.createElement(Icons$Website.Wave[/* make */0], {
-                        height: "2rem"
-                      })
+                  subtitle: "Feel free to reach me, I am active on all the platforms listed."
                 }), React.createElement("div", {
                   className: contactContainer
                 }, React.createElement(IconSection$Website.make, {

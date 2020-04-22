@@ -49,17 +49,17 @@ var Colors = /* module */[
 
 var Sizes_000 = /* large : `rem */[
   5691738,
-  1.8
+  3.2
 ];
 
 var Sizes_001 = /* medium : `rem */[
   5691738,
-  1.2
+  1.8
 ];
 
 var Sizes_002 = /* small : `rem */[
   5691738,
-  0.8
+  1.2
 ];
 
 var Sizes = /* module */[
@@ -68,23 +68,23 @@ var Sizes = /* module */[
   Sizes_002
 ];
 
-function defaults(param) {
-  return /* tuple */[
-          "html",
-          /* :: */[
-            Css.boxSizing(/* borderBox */9307263),
-            /* :: */[
-              Css.fontSize(/* `percent */[
-                    -119887163,
-                    62.5
-                  ]),
-              /* [] */0
-            ]
-          ]
-        ];
-}
+Css.$$global("html", /* :: */[
+      Css.boxSizing(/* borderBox */9307263),
+      /* :: */[
+        Css.fontSize(/* `percent */[
+              -119887163,
+              62.5
+            ]),
+        /* [] */0
+      ]
+    ]);
 
-var Control = /* module */[/* defaults */defaults];
+Css.$$global("body", /* :: */[
+      Css.minWidth(/* fitContent */-195805336),
+      /* [] */0
+    ]);
+
+var Control = /* module */[];
 
 export {
   Colors ,
@@ -92,4 +92,4 @@ export {
   Control ,
   
 }
-/* Css Not a pure module */
+/*  Not a pure module */

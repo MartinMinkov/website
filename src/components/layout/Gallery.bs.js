@@ -8,23 +8,26 @@ var galleryContainer = Css.style(/* :: */[
       Css.display(/* grid */-999565626),
       /* :: */[
         Css.gridTemplateColumns(/* :: */[
-              Css.fr(1.0),
-              /* :: */[
-                Css.fr(1.0),
-                /* :: */[
-                  Css.fr(1.0),
-                  /* :: */[
-                    Css.fr(1.0),
-                    /* :: */[
-                      Css.fr(1.0),
-                      /* :: */[
-                        Css.fr(1.0),
-                        /* [] */0
+              /* `repeat */[
+                108828507,
+                /* tuple */[
+                  /* autoFit */494053794,
+                  /* `minmax */[
+                    -754859950,
+                    /* tuple */[
+                      /* `rem */[
+                        5691738,
+                        28.0
+                      ],
+                      /* `fr */[
+                        22860,
+                        1.0
                       ]
                     ]
                   ]
                 ]
-              ]
+              ],
+              /* [] */0
             ]),
         /* [] */0
       ]

@@ -48,18 +48,30 @@ let make = () =>
     <div className=Style.funFactContainer>
       <Section title="Olympic Weightlifting">
         <p>
-          {s(
-             "Olympic Weightlifting  made its first appearence in the 1896 Olympics and then again in 1904;
-        however, it wasn't until 1920 that it was permanently established as an Olympic Sport.",
-           )}
+          {s("Olympic Weightlifting  made its first appearence in the ")}
+          <a href="https://www.olympic.org/athens-1896">
+            {s("1896 Olympics")}
+          </a>
+          {s(" and then again in")}
+          <a href="https://www.olympic.org/st-louis-1904"> {s(" 1904")} </a>
+          {s(" however, it wasn't until ")}
+          <a href="https://www.olympic.org/antwerp-1920"> {s("1920")} </a>
+          {s(" that it was permanently established as an Olympic Sport.")}
         </p>
         <img src="static/gifs/oly.gif" className=Style.funFactImage />
       </Section>
       <Section title="Programming">
         <p>
+          <a href="https://en.wikipedia.org/wiki/Grace_Hopper">
+            {s("Grace Murray Hopper ")}
+          </a>
           {s(
-             "Grace Murray Hopper was one of the first computer programmers to work on the Harvard Mark I.
-             She was also a United States Navy rear admiral, helped develop COBOL -- one of the first high-level
+             "was one of the first computer programmers to work on the Harvard Mark I.
+             She was also a United States Navy rear admiral, helped develop ",
+           )}
+          <a href="https://en.wikipedia.org/wiki/COBOL"> {s("COBOL ")} </a>
+          {s(
+             "-- one of the first high-level
              programming languages -- and invented the first compiler, a program that translates programming code
              to machine language.",
            )}
@@ -71,9 +83,15 @@ let make = () =>
       </Section>
       <Section title="Web Development">
         <p>
+          {s("This website was built with")}
+          <a href="https://reasonml.github.io/"> {s(" Reason ")} </a>
+          {s(" and ")}
+          <a href="https://nextjs.org/"> {s("Next.js.")} </a>
           {s(
-             "This website was built with Reason and Next.js, which has been really fun to work with. Reason lets you write
-        simple, fast and quality type safe code while leveraging both the JavaScript & OCaml ecosystems.",
+             " ReasonML is a syntax extension for the OCaml language created by Facebook.
+             Rather than creating an entirely new language, the creators of Reason chose to
+             build on top of OCaml, a battle-tested functional systems programming language
+             that's been around since the late 1990s.",
            )}
         </p>
         <img src="static/images/reason.png" className=Style.funFactImage />

@@ -110,19 +110,33 @@ function Funfacts(Props) {
                 }, React.createElement(Section$Website.make, {
                       title: "Olympic Weightlifting",
                       children: null
-                    }, React.createElement("p", undefined, "Olympic Weightlifting  made its first appearence in the 1896 Olympics and then again in 1904;\n        however, it wasn't until 1920 that it was permanently established as an Olympic Sport."), React.createElement("img", {
+                    }, React.createElement("p", undefined, "Olympic Weightlifting  made its first appearence in the ", React.createElement("a", {
+                              href: "https://www.olympic.org/athens-1896"
+                            }, "1896 Olympics"), " and then again in", React.createElement("a", {
+                              href: "https://www.olympic.org/st-louis-1904"
+                            }, " 1904"), " however, it wasn't until ", React.createElement("a", {
+                              href: "https://www.olympic.org/antwerp-1920"
+                            }, "1920"), " that it was permanently established as an Olympic Sport."), React.createElement("img", {
                           className: funFactImage,
                           src: "static/gifs/oly.gif"
                         })), React.createElement(Section$Website.make, {
                       title: "Programming",
                       children: null
-                    }, React.createElement("p", undefined, "Grace Murray Hopper was one of the first computer programmers to work on the Harvard Mark I.\n             She was also a United States Navy rear admiral, helped develop COBOL -- one of the first high-level\n             programming languages -- and invented the first compiler, a program that translates programming code\n             to machine language."), React.createElement("img", {
+                    }, React.createElement("p", undefined, React.createElement("a", {
+                              href: "https://en.wikipedia.org/wiki/Grace_Hopper"
+                            }, "Grace Murray Hopper "), "was one of the first computer programmers to work on the Harvard Mark I.\n             She was also a United States Navy rear admiral, helped develop ", React.createElement("a", {
+                              href: "https://en.wikipedia.org/wiki/COBOL"
+                            }, "COBOL "), "-- one of the first high-level\n             programming languages -- and invented the first compiler, a program that translates programming code\n             to machine language."), React.createElement("img", {
                           className: funFactImage,
                           src: "static/images/gracehopper.jpg"
                         })), React.createElement(Section$Website.make, {
                       title: "Web Development",
                       children: null
-                    }, React.createElement("p", undefined, "This website was built with Reason and Next.js, which has been really fun to work with. Reason lets you write\n        simple, fast and quality type safe code while leveraging both the JavaScript & OCaml ecosystems."), React.createElement("img", {
+                    }, React.createElement("p", undefined, "This website was built with", React.createElement("a", {
+                              href: "https://reasonml.github.io/"
+                            }, " Reason "), " and ", React.createElement("a", {
+                              href: "https://nextjs.org/"
+                            }, "Next.js."), " ReasonML is a syntax extension for the OCaml language created by Facebook.\n             Rather than creating an entirely new language, the creators of Reason chose to\n             build on top of OCaml, a battle-tested functional systems programming language\n             that's been around since the late 1990s."), React.createElement("img", {
                           className: funFactImage,
                           src: "static/images/reason.png"
                         })), React.createElement(Section$Website.make, {

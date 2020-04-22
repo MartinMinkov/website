@@ -11,8 +11,11 @@ var indexContainer = Css.style(/* :: */[
       /* :: */[
         Css.justifyContent(/* spaceBetween */516682146),
         /* :: */[
-          Css.alignItems(/* start */67859554),
-          /* [] */0
+          Css.flexWrap(/* wrap */-822134326),
+          /* :: */[
+            Css.alignItems(/* start */67859554),
+            /* [] */0
+          ]
         ]
       ]
     ]);

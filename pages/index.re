@@ -4,6 +4,7 @@ module Style = {
     style([
       display(`flex),
       justifyContent(`spaceBetween),
+      flexWrap(`wrap),
       alignItems(`start),
     ]);
 };

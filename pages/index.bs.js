@@ -46,17 +46,17 @@ function Index(Props) {
                       icon: React.createElement(Icons$Website.Wave[/* make */0], {
                             height: "4rem"
                           }),
-                      children: React.createElement("p", undefined, "I'm a 4th year computer science student at ", React.createElement("a", {
+                      children: React.createElement("p", undefined, "I'm a recent graduate from ", React.createElement("a", {
                                 href: "https://www.sfu.ca/"
                               }, "Simon Fraser University "), "I've also previously graduated from ", React.createElement("a", {
                                 href: "https://www.bcit.ca/"
-                              }, "BCIT"), " with a 2 year diploma. I enjoy working with new technologies and being exposed to all kinds of ideas.\n             Feel free to get in touch with me!")
+                              }, "BCIT"), " with a 2 year diploma. I enjoy working with new technologies and being exposed to all kinds of ideas. Currently working on helping build and support the Mina blockchain protocol.\n             Feel free to get in touch with me!")
                     }), React.createElement(Section$Website.make, {
                       title: "Development Experience",
                       icon: React.createElement(Icons$Website.Github[/* make */0], {
                             height: "4rem"
                           }),
-                      children: React.createElement("p", undefined, "I have experience working with various languages and frameworks.\n             At BCIT, I was exposed to a lot of C++ and networking principles.\n             At SFU, I have taken a more general approach and have taken courses in compiler design and implementation, embedded development,\n             computational complexity, and parallel programming. In my free time, I like to work on web development projects\n             and genuinely enjoy working with React.")
+                      children: React.createElement("p", undefined, "I have experience working with various languages and frameworks. I am currently working with new blockchain technologies and enjoying the fast paced nature of the industry.\n             I have worked with front end and back end development as well as working with devops technology.\n             At BCIT, I was exposed to a lot of C++ and networking principles.\n             At SFU, I have taken a more general approach and have taken courses in compiler design and implementation, embedded development,\n             computational complexity, and parallel programming. In my free time, I like to work on web development projects\n             and genuinely enjoy working with React.")
                     })));
 }
 
